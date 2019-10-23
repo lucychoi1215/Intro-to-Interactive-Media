@@ -1,0 +1,8 @@
+Response to "Her Code Got Humans on the Moon—And Invented Software Itself"
+
+It is very inspiring to read stories about how programmers in the early days work out "software" solutions to enormous problems, especially when the programmer is female.
+I feel like a lot of great inventions are invented unintendedly, like how they developed the concept of “software” and software engineering while dealing with navigation for the Apollo. Without the invention of software, our world today will definitely be very different from what it currently is. Either we’ll be living a traditional lifestyle, where almost nothing is “digital”, like our ancestors; or maybe we might have figured out some other ways of advanced technology. But anyhow, I am very grateful to the founding fathers and mothers of software (especially when I myself is a CS major in college).
+
+It is also interesting to think of how the working environment of programmers have changed from several decades ago. Back then they were only equipped with the most preliminary hardware while solving unprecedented problems. On the other hand, today we have much more advanced hardware and the majority of us are facing problems that we can easily get answers from our more experienced senior collogues (unless you are performing the most cutting-edge researches). 
+
+Nowadays it is a common practice to include all kinds of error detection and correction mechanisms into a program that requires user input and we as programmers should never expect our users to use our programs perfectly (which makes the assumption that astronauts are trained to be perfect so no need for error-checking code sounds surprising to me). Apollo’s case can be a good example of why that is necessary.
