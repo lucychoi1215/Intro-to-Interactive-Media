@@ -7,10 +7,11 @@ void setup() {
 }
 int minSize = 30;
 int sizeOfBlock = 200;
+boolean change = true;
 void draw() {
 
   //give a new set of squares every 100 frames
-  if (frameCount %  100 == 0) {
+  if (frameCount %  100 == 0 && change) {
     background(255);
     for (int y = 0; y< height; y +=sizeOfBlock) {
       for (int x = 0; x<width; x +=sizeOfBlock) {
@@ -41,4 +42,6 @@ void draw() {
       }
     }
   }
+  //stop / start changing
+  if(mousePressed){change = !change;}
 }
