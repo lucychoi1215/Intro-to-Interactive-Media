@@ -274,9 +274,9 @@ void mousePressed() {
   int row_sel = (int)((mouseY - ButtonHeight)/tileSize) +1;
   int col_sel = (int)((mouseX)/tileSize)+1;
   println(col_sel, row_sel );
-  if (!sweeper.play(col_sel, row_sel)) {
+  if (!sweeper.play(row_sel, col_sel)) {
     print( "Sorry, you died..\n");
-    sweeper.display(true); // Final board with bombs shown
+    sweeper.display(false); // Final board with bombs shown
   }
   if (sweeper.done()) {
 
