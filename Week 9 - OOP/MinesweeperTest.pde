@@ -6,7 +6,8 @@ int tileSize = FrameSize/DIMENSION;
 int maxSurround = 0;
 int BOMB_PROBABILITY =10;
 PFont f;   
-
+ArrayList<IntList> to_do_list = new ArrayList<IntList>();
+IntList curr = new IntList();
 //https://processing.org/tutorials/text/
 class Tile {
   boolean isBomb;
@@ -173,15 +174,16 @@ class MyMinesweeper {
     if (board[row][col].isBomb) {
       return false;
     }
-    ArrayList<IntList> to_do_list = new ArrayList<IntList>();
-    IntList curr = new IntList();
+
     curr.append(row);
     curr.append(col);
     to_do_list.add(curr);
 
+
     while (to_do_list.size()!=0) {
 
       curr=to_do_list.get(to_do_list.size()-1);
+      println(1);
       int r=curr.get(0);
       int c=curr.get(1);
       to_do_list.remove(to_do_list.size()-1);
@@ -262,17 +264,16 @@ void setup() {
   f = createFont("Arial", 10, true);
 
 
-  sweeper.display(false); 
-
-  
+  sweeper.display(true);
 }
-void draw(){}
+void draw() {
+}
 
 void mousePressed() {
   println(mouseX, mouseY);
   int row_sel = (int)((mouseY - ButtonHeight)/tileSize) +1;
   int col_sel = (int)((mouseX)/tileSize)+1;
-  println(col_sel,row_sel );
+  println(col_sel, row_sel );
   if (!sweeper.play(col_sel, row_sel)) {
     print( "Sorry, you died..\n");
     sweeper.display(true); // Final board with bombs shown
@@ -280,6 +281,7 @@ void mousePressed() {
   if (sweeper.done()) {
 
     print( "You won!!!!\n");
+  } else {
+    sweeper.display(false);
   }
-  else{sweeper.display(false); }
 }
