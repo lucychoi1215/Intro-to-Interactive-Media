@@ -144,7 +144,7 @@ class MyMinesweeper {
       for (int c=1; c<(DIMENSION+1); c++) {
 
         pushMatrix();
-        translate((r-1) * tileSize, (c-1) *tileSize + ButtonHeight);
+        translate((c-1) * tileSize, (r-1) *tileSize + ButtonHeight);
 
         board[r][c].tileDisplay(dis_bomb);
         //print(board[r].length);
