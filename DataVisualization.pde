@@ -34,10 +34,7 @@ void draw() {
   textAlign(LEFT);
   text("Round",0,40);
   text(data[round],textWidth("Round")+20,40);
-  text("a1 = ",250,40);
-  text(data[a1_off],250+textWidth("a1 = "),40);
-  text("a2 = ",400,40);
-  text(data[a2_off],400+textWidth("a2 = "),40);
+  
   text("Sending Rates", 0, 80);
   text("Buffer", width/4+textWidth("Buffer"), height/8);
   text("Dropped", width/4+textWidth("Buffer"), height/4+450);
@@ -46,9 +43,13 @@ void draw() {
   square(width/4, height/4, 400);
   rect(600,100,400,50);
   fill(255, 0, 0);
+  text("a1 = ",250,40);
+  text(data[a1_off],250+textWidth("a1 = "),40);
   text(data[n1_off], 20, 150);
   rect(600,100,data[gp1_off],50);
   fill(0, 0, 255);
+  text("a2 = ",400,40);
+  text(data[a2_off],400+textWidth("a2 = "),40);
   text(data[n2_off], 20, 200);
   rect(600+data[gp1_off],100,data[gp2_off],50);
   drawLog(data[log1_off],data[log2_off]);
