@@ -3,6 +3,7 @@ Final Project Proposal for Lucy and Chunxiao
 **1.Project description**
 - The project is going to have two parts: a box with mounted grid-touchpads and laptop screen display preferably projected onto a (screen on a ) wall. There are going to be 16 touchpad buttons mounted onto one side of the box. Underneath each touchpad grid there’s going to be a push button and an led. The projected display will show a user interface to start a quick response game. Multiple buttons will be lit randomly and the user will have to click the lit buttons within a given time. A song will be played in the background and warning sound effects will be generated if wrong button pressed/ button not pressed within given time limit. Points will be given for valid clicks. If the user can reach a certain point threshold within a certain number of mistakes, he or she wins the game and gains access to a hidden mode.
 - Hidden mode:  the mounted grid-touchpads light up in different colors. The winner gets to select a maximum of 5 colors by pressing the touchpads with corresponding colors. This adds onto a particle-system drawing where each of the colored grid touchpad they press input a single particle of a corresponding color onto the canvas. To put it more simply, it’s a ‘hall of fame’ but in a more abstract way. In the end, there will be an artwork where all the winners’ inputs are presented as one.
+
 Example of particle-system:https://www.openprocessing.org/sketch/773983
 
 **2. Rough sketch of the entire project**
