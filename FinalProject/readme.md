@@ -38,5 +38,5 @@ Final Project Proposal for Lucy and Chunxiao
 **8.Areas of greatest concern**
 - If the pressing of the buttons will be detected and responded fast enough for the game to function as proposed (possible delay of communication between Arduino and Processing).
 - If this game doesn’t work out, we might need to switch to some other games.
-Construction of the box.**
+Construction of the box.
 
