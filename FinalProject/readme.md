@@ -27,7 +27,7 @@ Example of particle-system:https://www.openprocessing.org/sketch/773983
 - Additional push buttons 
 - Styrofoam (to be used under the touch pads)
 - Arduino board with additional ports (at least 32 ports for 16-button touch pad)
-
+- Neo pixel for 16 LEDs if applicable
 
 **5.Description of the Arduino program**
 - The Arduino program will receive signal from processing and light up different LEDs according to the signal.
