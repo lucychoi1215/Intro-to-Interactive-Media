@@ -2,7 +2,7 @@ Final Project Proposal for Lucy and Chunxiao
 
 **1.Project description**
 - The project is to simulate a game console using a touchpad-like controller with sensors and arduino and processing program on a laptop.
-![](DJpad.jpg)
+![](DJpad.png)
 - The controller is a box with mounted grid-touchpads. There are going to be 16 touchpad buttons mounted onto one side of the box. Underneath each touchpad grid there’s going to be a push button and an led. (see rough sketch below). 
 - We are planning to implement a rhythm game using processing. (example :https://www.youtube.com/watch?v=kGzm4f35x_s) Multiple buttons will be lit randomly and the user will have to click the lit buttons within a given time. Points will be given for valid clicks and warning sound will be generated for wrong clicks.The will be a song being played in the background. As the game proceeds, the frequency and the speed of playback of the BGM will increase to increase the difficulty. If the user can reach a certain point threshold within a certain number of mistakes, he or she wins the game and gains access to a hidden mode.
 - If time permits, we’ll also implement another game where players will be provided 8 pairs of pictures for several seconds. After the pictures are hidden, they’ll need to use the buttons on the touchpad to pair up the pictures. This can be an entry level game for the players before they proceed to the rhythm game described above.
