@@ -43,6 +43,7 @@ Example of particle-system:https://www.openprocessing.org/sketch/773983
 **7.Things you need to learn that you don’t yet know**
 - How to generate particle-systems
 - Sound generation on Processing
+- How to make use of neo pixel
 
 **8.Areas of greatest concern**
 - If the pressing of the buttons will be detected and responded fast enough for the game to function as proposed (possible delay of communication between Arduino and Processing).
