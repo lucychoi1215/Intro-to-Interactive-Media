@@ -1,8 +1,12 @@
 Final Project Proposal for Lucy and Chunxiao
 
 **1.Project description**
-- The project is going to have two parts: a box with mounted grid-touchpads and laptop screen display preferably projected onto a (screen on a ) wall. There are going to be 16 touchpad buttons mounted onto one side of the box. Underneath each touchpad grid there’s going to be a push button and an led. The projected display will show a user interface to start a quick response game. Multiple buttons will be lit randomly and the user will have to click the lit buttons within a given time. A song will be played in the background and warning sound effects will be generated if wrong button pressed/ button not pressed within given time limit. Points will be given for valid clicks. If the user can reach a certain point threshold within a certain number of mistakes, he or she wins the game and gains access to a hidden mode.
+- The project is to simulate a game console using a touchpad-like controller with sensors and arduino and processing program on a laptop.
+- The controller is a box with mounted grid-touchpads. There are going to be 16 touchpad buttons mounted onto one side of the box. Underneath each touchpad grid there’s going to be a push button and an led. (see rough sketch below). 
+- We are planning to implement a rhythm game using processing. (example :https://www.youtube.com/watch?v=kGzm4f35x_s) Multiple buttons will be lit randomly and the user will have to click the lit buttons within a given time. Points will be given for valid clicks and warning sound will be generated for wrong clicks.The will be a song being played in the background. As the game proceeds, the frequency and the speed of playback of the BGM will increase to increase the difficulty. If the user can reach a certain point threshold within a certain number of mistakes, he or she wins the game and gains access to a hidden mode.
+- If time permits, we’ll also implement another game where players will be provided 8 pairs of pictures for several seconds. After the pictures are hidden, they’ll need to use the buttons on the touchpad to pair up the pictures. This can be an entry level game for the players before they proceed to the rhythm game described above.
 - Hidden mode:  the mounted grid-touchpads light up in different colors. The winner gets to select a maximum of 5 colors by pressing the touchpads with corresponding colors. This adds onto a particle-system drawing where each of the colored grid touchpad they press input a single particle of a corresponding color onto the canvas. To put it more simply, it’s a ‘hall of fame’ but in a more abstract way. In the end, there will be an artwork where all the winners’ inputs are presented as one.
+- Touchpad will be about 4 in. by 4 in. big
 
 Example of particle-system:https://www.openprocessing.org/sketch/773983
 
@@ -17,10 +21,12 @@ Example of particle-system:https://www.openprocessing.org/sketch/773983
 ![BlockDiagram](BlockDiagram.jpg)
 
 **4.List of parts you need that are not in your kit**
-- A box enclosure (made of translucent acrylic)
+- A box enclosure (3mm thick cardboard)
+- Laser cut translucent acrylic (1 in. by 1 in. x 16)
 - Additional push buttons 
-- Frame to separate led lights 
+- Styrofoam (to be used under the touch pads)
 - Arduino board with additional ports (at least 32 ports for 16-button touch pad)
+
 
 **5.Description of the Arduino program**
 - The Arduino program will receive signal from processing and light up different LEDs according to the signal.
@@ -40,5 +46,5 @@ Example of particle-system:https://www.openprocessing.org/sketch/773983
 **8.Areas of greatest concern**
 - If the pressing of the buttons will be detected and responded fast enough for the game to function as proposed (possible delay of communication between Arduino and Processing).
 - If this game doesn’t work out, we might need to switch to some other games.
-Construction of the box.
+- Construction of the box.
 
